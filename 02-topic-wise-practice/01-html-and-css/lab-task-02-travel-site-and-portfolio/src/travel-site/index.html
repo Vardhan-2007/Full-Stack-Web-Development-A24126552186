@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Andhra - Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Explore Andhra</div>
+    <nav>
+      <a href="#places">Places</a>
+      <a href="#plan">Plan a Trip</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hills, beaches and caves, all within a day's drive of Vizag</h1>
+    <p>A short guide to weekend trips in Andhra Pradesh.</p>
+    <a class="btn" href="#places">See places</a>
+  </section>
+
+  <section id="places" class="places">
+    <h2>Popular places</h2>
+    <div class="grid">
+      <div class="place araku">
+        <div class="place-body">
+          <h3>Araku Valley</h3>
+          <p>Coffee plantations, the Borra caves and a scenic train ride through the Eastern Ghats.</p>
+          <span class="tag">115 km from Vizag</span>
+        </div>
+      </div>
+      <div class="place rk">
+        <div class="place-body">
+          <h3>RK Beach</h3>
+          <p>The city beach with the submarine museum and an evening walk along Beach Road.</p>
+          <span class="tag">In the city</span>
+        </div>
+      </div>
+      <div class="place lambasingi">
+        <div class="place-body">
+          <h3>Lambasingi</h3>
+          <p>Known as the Kashmir of Andhra; foggy winter mornings and strawberry farms.</p>
+          <span class="tag">100 km from Vizag</span>
+        </div>
+      </div>
+      <div class="place gandikota">
+        <div class="place-body">
+          <h3>Gandikota</h3>
+          <p>A red-rock gorge on the Pennar river with an old fort on the cliff edge.</p>
+          <span class="tag">Kadapa district</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan" class="plan">
+    <h2>Plan a trip</h2>
+    <form class="plan-form">
+      <label>Name <input type="text" placeholder="Your name" required></label>
+      <label>Destination
+        <select>
+          <option>Araku Valley</option>
+          <option>RK Beach</option>
+          <option>Lambasingi</option>
+          <option>Gandikota</option>
+        </select>
+      </label>
+      <label>Travel date <input type="date"></label>
+      <label>Travellers <input type="number" min="1" value="2"></label>
+      <button type="submit" class="btn">Send request</button>
+    </form>
+  </section>
+
+  <footer id="contact" class="site-footer">
+    <p>Explore Andhra | example@gmail.com | 9876543210</p>
+    <p>&copy; 2026 V. Govardhan</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: #f2f4f7; color: #1e2733; }
+.app { max-width: 960px; margin: 0 auto; padding: 24px; }
+.header { background: #233a6b; color: #fff; padding: 22px 26px; border-radius: 6px; }
+.header h1 { margin: 0; }
+.header p { margin: 6px 0 0; color: #c8d4ef; }
+.panel { background: #fff; padding: 12px 20px; margin: 18px 0; border-radius: 6px; border: 1px solid #dde3ec; }
+.panel h2 { margin: 6px 0; font-size: 1.1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.card { background: #fff; padding: 16px; border-radius: 6px; border: 1px solid #dde3ec; }
+.card h3 { margin: 10px 0 4px; }
+.card-top { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.code { font-weight: bold; color: #233a6b; margin-right: auto; }
+.badge { font-size: 0.75rem; padding: 2px 8px; border-radius: 10px; background: #e3e8f2; }
+.badge-lab { background: #ffe1a8; }
+.faculty { color: #5b6573; margin: 0 0 8px; }
+.topics { padding-left: 18px; margin: 0; }
+.muted { color: #8a93a0; font-style: italic; }

@@ -1,0 +1,53 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, "Times New Roman", serif; color: #23312b; background: #f6f8f4; line-height: 1.6; }
+
+.site-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 6%; background: #1f4d3a; color: #fff;
+  position: sticky; top: 0; z-index: 10;
+}
+.logo { font-size: 1.4rem; font-weight: bold; }
+.site-header nav a { color: #e3efe7; text-decoration: none; margin-left: 20px; }
+.site-header nav a:hover { color: #ffd479; }
+
+.hero {
+  padding: 90px 6%; color: #fff; text-align: left;
+  background: linear-gradient(160deg, #1f4d3a 0%, #2f7a5a 55%, #e0a43a 100%);
+}
+.hero h1 { font-size: 2.4rem; max-width: 640px; line-height: 1.2; }
+.hero p { margin: 14px 0 26px; font-size: 1.1rem; }
+
+.btn {
+  display: inline-block; background: #ffd479; color: #1f4d3a; border: none;
+  padding: 10px 22px; border-radius: 4px; text-decoration: none;
+  font-weight: bold; cursor: pointer; font-family: inherit;
+}
+.btn:hover { background: #ffc24a; }
+
+.places, .plan { padding: 50px 6%; }
+.places h2, .plan h2 { margin-bottom: 24px; font-size: 1.8rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+.place { min-height: 260px; border-radius: 6px; display: flex; align-items: flex-end; color: #fff; overflow: hidden; }
+.place-body { background: rgba(0,0,0,0.45); padding: 16px; width: 100%; }
+.place h3 { font-size: 1.25rem; }
+.tag { display: inline-block; margin-top: 8px; font-size: 0.8rem; background: #ffd479; color: #1f4d3a; padding: 2px 8px; border-radius: 3px; }
+.araku      { background: linear-gradient(#5d9b6a, #2b5a3a); }
+.rk         { background: linear-gradient(#5bb3d6, #1d5f86); }
+.lambasingi { background: linear-gradient(#b9c7cf, #5e7480); }
+.gandikota  { background: linear-gradient(#d97b45, #7d3518); }
+
+.plan { background: #e7efe9; }
+.plan-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; max-width: 800px; }
+.plan-form label { display: flex; flex-direction: column; font-weight: bold; font-size: 0.95rem; }
+.plan-form input, .plan-form select { margin-top: 6px; padding: 8px; border: 1px solid #9fb5a8; border-radius: 4px; font-family: inherit; }
+.plan-form .btn { align-self: end; }
+
+.site-footer { text-align: center; padding: 24px; background: #1f4d3a; color: #e3efe7; }
+
+@media (max-width: 600px) {
+  .site-header { flex-direction: column; gap: 8px; }
+  .site-header nav a { margin: 0 8px; }
+  .hero { padding: 60px 6%; }
+  .hero h1 { font-size: 1.7rem; }
+}

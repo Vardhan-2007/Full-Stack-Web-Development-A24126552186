@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Layout and Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS Layout, Positioning and Media</h1>
+
+  <h2>1. Flexbox</h2>
+  <p>justify-content: space-between</p>
+  <div class="flex-row between">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+  </div>
+  <p>justify-content: center with align-items: center</p>
+  <div class="flex-row center">
+    <div class="box">A</div><div class="box tall">B</div><div class="box">C</div>
+  </div>
+  <p>flex-direction: column</p>
+  <div class="flex-col">
+    <div class="box">Top</div><div class="box">Middle</div><div class="box">Bottom</div>
+  </div>
+  <p>flex-wrap: wrap with flex-grow</p>
+  <div class="flex-row wrap">
+    <div class="box grow">grow 1</div><div class="box grow2">grow 2</div><div class="box grow">grow 1</div>
+  </div>
+
+  <h2>2. Positioning</h2>
+  <div class="pos-container">
+    <div class="pos static">static</div>
+    <div class="pos relative">relative (top: 10px, left: 30px)</div>
+    <div class="pos absolute">absolute (top-right of container)</div>
+  </div>
+  <div class="pos fixed">fixed</div>
+  <div class="sticky-demo">
+    <div class="pos sticky">sticky (sticks while scrolling this box)</div>
+    <p>Scroll inside this box. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <h2>3. iframe</h2>
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=83.30%2C17.70%2C83.36%2C17.74&amp;layer=mapnik"
+          width="100%" height="300" title="Map of Visakhapatnam" loading="lazy"></iframe>
+
+  <h2>4. Audio</h2>
+  <audio controls>
+    <source src="media/sample-audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <h2>5. Video</h2>
+  <video width="480" controls poster="">
+    <source src="media/sample-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>

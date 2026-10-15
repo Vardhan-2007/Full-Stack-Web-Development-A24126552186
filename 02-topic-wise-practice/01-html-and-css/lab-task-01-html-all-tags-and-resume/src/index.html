@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML Tags</title>
+</head>
+<body>
+  <h1>Basic HTML Tags</h1>
+  <p>This page uses the common HTML tags one after another so each can be seen in the browser.</p>
+
+  <h2>1. Headings</h2>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <h2>2. Text formatting</h2>
+  <p>
+    <b>Bold</b>, <strong>strong</strong>, <i>italic</i>, <em>emphasis</em>,
+    <u>underline</u>, <mark>highlighted</mark>, <small>small</small>,
+    <del>deleted</del>, <ins>inserted</ins>, H<sub>2</sub>O and x<sup>2</sup>.
+  </p>
+  <p>Line one<br>Line two after a line break.</p>
+  <pre>
+  Preformatted text
+      keeps   its   spacing.
+  </pre>
+  <blockquote>A blockquote is used for a longer quotation.</blockquote>
+  <p>A short <q>inline quote</q> and an <abbr title="HyperText Markup Language">HTML</abbr> abbreviation.</p>
+  <p><code>console.log("code tag");</code></p>
+  <hr>
+
+  <h2>3. Lists</h2>
+  <h3>Unordered list</h3>
+  <ul>
+    <li>Apples</li>
+    <li>Mangoes</li>
+    <li>Bananas</li>
+  </ul>
+  <h3>Ordered list (Roman numerals)</h3>
+  <ol type="I">
+    <li>Plan</li>
+    <li>Build</li>
+    <li>Test</li>
+  </ol>
+  <h3>Description list</h3>
+  <dl>
+    <dt>HTML</dt><dd>Gives a web page its structure.</dd>
+    <dt>CSS</dt><dd>Controls how the page looks.</dd>
+  </dl>
+  <hr>
+
+  <h2>4. Links</h2>
+  <p>
+    <a href="https://www.w3schools.com" target="_blank">External link (new tab)</a> |
+    <a href="resume.html">Link to my resume</a> |
+    <a href="#tables">Jump to the table section</a> |
+    <a href="mailto:example@gmail.com">Email link</a>
+  </p>
+
+  <h2>5. Image</h2>
+  <img src="sample.svg" alt="Hills and sun drawing" width="200" height="120">
+
+  <h2 id="tables">6. Table</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <caption>Weekly timetable</caption>
+    <thead>
+      <tr><th>Day</th><th>Period 1</th><th>Period 2</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Monday</td><td>FSD</td><td>DBMS</td></tr>
+      <tr><td>Tuesday</td><td colspan="2">FSD Lab</td></tr>
+      <tr><td rowspan="2">Wednesday</td><td>OS</td><td>CN</td></tr>
+      <tr><td>Library</td><td>Sports</td></tr>
+    </tbody>
+  </table>
+
+  <h2>7. Form elements</h2>
+  <form>
+    <label for="uname">Name:</label>
+    <input type="text" id="uname" placeholder="Enter name"><br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="1" max="100"><br><br>
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob"><br><br>
+    <label for="branch">Branch:</label>
+    <select id="branch">
+      <option>CSE</option>
+      <option>CSE (AI &amp; ML)</option>
+      <option>ECE</option>
+    </select><br><br>
+    <label for="color">Favourite colour:</label>
+    <input type="color" id="color"><br><br>
+    <label for="range">Rate this page:</label>
+    <input type="range" id="range" min="0" max="10"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>8. Semantic tags</h2>
+  <header><p>&lt;header&gt; holds the page title area.</p></header>
+  <nav><p>&lt;nav&gt; holds navigation links.</p></nav>
+  <main>
+    <article><p>&lt;article&gt; holds a self-contained piece of content.</p></article>
+    <section><p>&lt;section&gt; groups related content.</p></section>
+    <aside><p>&lt;aside&gt; holds side content.</p></aside>
+  </main>
+  <footer><p>&lt;footer&gt; holds the page footer. &copy; 2026 V. Govardhan</p></footer>
+</body>
+</html>

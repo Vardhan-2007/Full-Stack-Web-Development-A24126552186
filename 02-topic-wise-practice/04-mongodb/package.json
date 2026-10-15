@@ -1,0 +1,10 @@
+{
+  "name": "mongodb-practice",
+  "version": "1.0.0",
+  "description": "Mongoose schema validation and aggregation queries",
+  "scripts": {
+    "validation": "node mongoose-schema-validation.js",
+    "aggregation": "node aggregation-queries.js"
+  },
+  "dependencies": { "mongoose": "^7.6.3" }
+}
