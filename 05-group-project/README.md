@@ -1,4 +1,4 @@
-# Verifi — Institutional Achievement Management System
+# Verifi — Institutional Achievement Management System            live: http://hack-arena-gilt.vercel.app
 
 Role-based web app for tracking, verifying, and reporting student and faculty achievements (publications, certifications, internships, workshops, hackathons, patents, sports, cultural events, etc.).
 
